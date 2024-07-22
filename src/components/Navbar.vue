@@ -2,16 +2,25 @@
     <header class="sticky top-0 bg-blue-700 z-50">
         <nav class=" mx-auto h-[7vh] w-[90%] flex items-center justify-between">
             <h1 class="text-yellow-400 text-xl font-medium tracking-wide">UNICESS</h1>
-            <ul class="flex gap-x-10 text-white">
+            
+            <div class="fixed md:relative top-0 right-[-8rem] md:right-0 bg-blue-800 md:bg-transparent h-full" id="sidebar" :class="{ 'w-change': isSidebarOpen }">
+              <ul class="flex flex-col gap-y-4 md:gap-y-0 md:flex-row gap-x-10 text-white p-4">
                 <a href="#home">Home</a>
-               <a href="#latest">Latest</a>
-               <a href="#about">About</a>
-               <a href="#article">Article</a>
-               <a href="#program">Progam</a>
-               <a href="#mission">Mission</a>
-               <a href="#contact">Contact</a>
-           </ul>
-            <div>
+                <a href="#latest">Latest</a>
+                <a href="#about">About</a>
+                <a href="#article">Article</a>
+                <a href="#program">Progam</a>
+                <a href="#mission">Mission</a>
+                <a href="#contact">Contact</a>
+              </ul>
+            </div>
+            
+            <div class="block md:hidden z-50">
+              <button @click="toggle" type="button">
+                <img src="/src/assets/img/burger.png" width="30" alt="" />
+              </button>
+            </div>
+           
               <!-- <Dropdown class="text-white">
                 <template v-slot:body>
                   <div  class="flex items-center gap-x-2">
@@ -34,11 +43,38 @@
                 </template>
 
               </Dropdown>             -->
-            </div>
+           
         </nav>
     </header>
 </template>
 
+<script setup>
+
+import { ref } from 'vue';
+
+const isSidebarOpen = ref(false);
+
+function toggle() {
+  isSidebarOpen.value = !isSidebarOpen.value;
+}
+</script>
+
+<style scoped>
+
+.w-zero {
+    width: 0rem;
+}
+
+.w-change {
+  width: 20rem;
+
+}
+
+#sidebar {
+  transition: width 0.3s;
+}
+
+</style>
 <!-- <script setup>
 import { ref, computed, onMounted } from 'vue';
 import { useAuthStore } from '../store/index';

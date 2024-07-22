@@ -1,8 +1,8 @@
 <template>
-    <section class="w-[90%] mx-auto h-[30vh] flex items-center justify-center gap-x-[4rem]">
+    <section class="w-[90%] mx-auto h-[30vh] flex flex-col lg:flex-row gap-y-4  items-center justify-center lg:gap-x-[4rem]">
         <div
             class="flex-1 h-[70%] w-full bg-about-1 rounded-lg flex flex-col items-center justify-center px-3 text-center text-white">
-            <h1 class="text-5xl font-semibold  tracking-wide text-yellow-400 drop-shadow-lg">
+            <h1 class="xl:text-4xl 2xl:text-5xl font-semibold  tracking-wide text-yellow-400 drop-shadow-lg">
                 INTEGRITY
             </h1>
             <p class="tracking-wide drop-shadow-lg">Enhancing community life through education, health, economic
@@ -11,7 +11,7 @@
         </div>
         <div
             class="flex-1 h-[70%] w-full bg-about-2 rounded-lg flex flex-col items-center justify-center px-3 text-center text-white">
-            <h1 class="text-5xl font-semibold  tracking-wide text-yellow-400 drop-shadow-lg">
+            <h1 class="xl:text-4xl 2xl:text-5xl font-semibold  tracking-wide text-yellow-400 drop-shadow-lg">
                 EXCELLENCE
             </h1>
             <p class="tracking-wide drop-shadow-lg">Excellence, and collaboration enhance education, health, economic
@@ -20,7 +20,7 @@
         </div>
         <div
             class="flex-1 h-[70%] w-full bg-about-3 rounded-lg flex flex-col items-center justify-center px-3 text-center text-white">
-            <h1 class="text-5xl font-semibold  tracking-wide text-yellow-400 drop-shadow-lg">
+            <h1 class="xl:text-4xl 2xl:text-5xl font-semibold  tracking-wide text-yellow-400 drop-shadow-lg">
                 HONESTY
             </h1>
             <p class="tracking-wide drop-shadow-lg">Enhancing education, health, and sustainability with honesty,

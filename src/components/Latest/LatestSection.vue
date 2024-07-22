@@ -1,8 +1,7 @@
 <template>
-    <h1 class="text-center text-2xl mt-12 font-semibold tracking-wide text-blue-900" id="latest">LATEST SECTION</h1>
-    <section class="h-[50vh] flex items-center justify-between mx-auto w-[90%] gap-4">
-        <div class="flex-1">
-
+    <h1 class="text-center text-2xl mt-12 font-semibold tracking-wide text-blue-900" id="latest">LATEST NEWS</h1>
+    <section class="lg:h-[50vh] flex flex-col lg:flex-row items-center justify-between mx-auto w-[90%] gap-4">
+        <div class="w-full">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
                 <!-- Carousel wrapper -->
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96 w-full">
@@ -159,7 +158,7 @@
                 </button> -->
             </div>
         </div>
-        <div class="flex-1 flex  h-[80%]">
+        <div class="w-full flex  h-[80%]">
             <CalendarSection />
         </div>
 

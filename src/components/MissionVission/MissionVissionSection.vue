@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-2xl font-semibold tracking-wide text-blue-900 mt-[10vh] mb-10 text-center" id="mission">MISSION VISSION SECTION</h1>
+    <h1 class="text-2xl font-semibold tracking-wide text-blue-900 mt-[10vh] mb-10 text-center" id="mission">MISSION VISSION</h1>
 
     <section class="flex flex-col sm:flex-row md:flex-row mission-vision h-[50vh] w-[90%] mx-auto">
 

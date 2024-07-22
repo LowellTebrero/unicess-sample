@@ -1,20 +1,21 @@
 <template>
-    <section class="h-[70vh] background-image" id="home">
-        <div class="flex items-center justify-between mx-auto w-[90%] h-full">
-            <div class="flex-1 flex items-center justify-center">
-                <img src="/src/assets/img/logo.png" alt="unicess-logo" class="w-[15rem] drop-shadow-lg">
+    <section class="lg:h-[70vh] background-image py-[10svh]" id="home">
+        <div class="flex flex-col lg:flex-row items-center justify-between mx-auto w-[90%] h-full">
+            <div class="flex-1 flex items-center justify-center mb-[4svh] lg:mb-0">
+                <img src="/src/assets/img/logo.png" alt="unicess-logo" class="w-[10rem] lg:w-[10rem] xl:w-[15rem] drop-shadow-lg">
             </div>
             <div class="flex-1">
-                <h1 class="text-6xl font-medium text-yellow-400 drop-shadow-lg">University Community Extension Services
+                <h1 class="text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-medium text-yellow-400 drop-shadow-lg text-center lg:text-left">University Community Extension Services
                     System</h1>
-                <p class="text-white font-medium tracking-wide drop-shadow-lg mt-3">
+                <p class="text-white md:font-medium tracking-wide drop-shadow-lg mt-3 text-xs sm:text-sm xl:text-lg font-light text-shadow text-center lg:text-left">
                     The University Community Extension Services System is a dynamic initiative designed to bridge the
                     gap between academic institutions and the wider community. By leveraging the expertise and resources
                     of the university, this system aims to provide a wide array of services that enhance the quality of
                     life, promote lifelong learning, and foster sustainable development within the community.
                 </p>
-                <button class="bg-yellow-500 text-white px-3 py-1 mt-4 drop-shadow-lg font-medium tracking-wide">Show
-                    more</button>
+                <div class="flex w-full justify-center lg:justify-start  mt-4">
+                    <button class="bg-yellow-500 text-white px-3 py-1  drop-shadow-lg font-medium tracking-wide text-sm md:text-md rounded h-full">Show more</button>
+                </div>
             </div>
         </div>
 
