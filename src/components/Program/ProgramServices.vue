@@ -2,7 +2,7 @@
     
     <section class="bg-blue-800" id="program">
         <h1 class="text-2xl font-semibold tracking-wide text-white py-10 text-center">PROGRAM AND SERVICES</h1>
-     <div class="grid grid-cols-3 xl:grid-cols-4  2xl:h-[70vh] gap-2 just mx-auto w-[70%] p-4">
+     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4  2xl:h-[70vh] gap-2 just mx-auto w-[70%] p-4">
         <div class="bg-white h-auto xl:h-[28vh] flex flex-col items-center justify-center p-5 py-10 rounded-lg gap-y-4 text-center">
             <img src="/src/assets/img/running.png" alt="" width="70">
             <div>

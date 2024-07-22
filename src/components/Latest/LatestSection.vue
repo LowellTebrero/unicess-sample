@@ -1,6 +1,6 @@
 <template>
-    <h1 class="text-center text-2xl mt-12 font-semibold tracking-wide text-blue-900" id="latest">LATEST NEWS</h1>
-    <section class="lg:h-[50vh] flex flex-col lg:flex-row items-center justify-between mx-auto w-[90%] gap-4">
+    <h1 class="text-center text-2xl mt-5 lg:mt-12 font-semibold tracking-wide text-blue-900" id="latest">LATEST NEWS</h1>
+    <section class="lg:h-[50vh] py-[4svh] lg:py-0 flex flex-col lg:flex-row items-center justify-between mx-auto w-[90%] gap-4">
         <div class="w-full">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
                 <!-- Carousel wrapper -->
@@ -14,9 +14,9 @@
                                 <span class="text-xs font-extralight">UNICESS NEWS</span>
                             </div>
                             <div>
-                                <h1 class="text-[1.4rem] font-medium">University Launches Comprehensive Community
+                                <h1 class="text-sm lg:text-xl font-medium">University Launches Comprehensive Community
                                     Education Programs</h1>
-                                <p class="text-sm text-left font-light">
+                                <p class="text-xs md:text-sm text-left font-light">
                                     The University Community Extension Services System has launched a series of
                                     comprehensive educational programs aimed at fostering lifelong learning within the
                                     community. The programs include workshops, seminars, and continuing education
@@ -36,9 +36,9 @@
                                 <span class="text-xs font-extralight">UNICESS NEWS</span>
                             </div>
                             <div>
-                                <h1 class="text-[1.4rem] font-medium">Health and Wellness Fair Promotes Community
+                                <h1 class="text-sm lg:text-xl font-medium">Health and Wellness Fair Promotes Community
                                     Well-being</h1>
-                                <p class="text-sm text-left font-light">
+                                <p class="text-xs md:text-sm text-left font-light">
                                     The University Community Extension Services System recently held a health and
                                     wellness fair, offering free health screenings, fitness classes, and wellness
                                     workshops to community members. The event aimed to promote healthy living and
@@ -58,9 +58,9 @@
                                 <span class="text-xs font-extralight">UNICESS NEWS</span>
                             </div>
                             <div>
-                                <h1 class="text-[1.4rem] font-medium">University Supports Local Entrepreneurs with New
+                                <h1 class="text-sm lg:text-xl font-medium">University Supports Local Entrepreneurs with New
                                     Business Hub</h1>
-                                <p class="text-sm text-left font-light">
+                                <p class="text-xs md:text-sm text-left font-light">
                                     The University Community Extension Services System has opened a new business hub to
                                     support local entrepreneurs. The hub provides consulting services, entrepreneurial
                                     training, and business incubation programs. These resources aim to stimulate
@@ -80,9 +80,9 @@
                                 <span class="text-xs font-extralight">UNICESS NEWS</span>
                             </div>
                             <div>
-                                <h1 class="text-[1.4rem] font-medium">Environmental Sustainability Project Takes Root at
+                                <h1 class="text-sm lg:text-xl font-medium">Environmental Sustainability Project Takes Root at
                                     University</h1>
-                                <p class="text-sm text-left font-light">
+                                <p class="text-xs md:text-sm text-left font-light">
                                     The University Community Extension Services System has initiated an environmental
                                     sustainability project focused on urban gardening and recycling programs. The
                                     project involves community members in creating and maintaining green spaces,
@@ -102,9 +102,9 @@
                                 <span class="text-xs font-extralight">UNICESS NEWS</span>
                             </div>
                             <div>
-                                <h1 class="text-[1.4rem] font-medium">Cultural Festival Celebrates Diversity and
+                                <h1 class="text-sm lg:text-xl font-medium">Cultural Festival Celebrates Diversity and
                                     Community Spirit</h1>
-                                <p class="text-sm text-left font-light">
+                                <p class="text-xs md:text-sm text-left font-light">
                                     The University Community Extension Services System recently hosted a cultural
                                     festival that celebrated the diversity and rich cultural heritage of the community.
                                     The event featured performances, art exhibits, and recreational activities,
