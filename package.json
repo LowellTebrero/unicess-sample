@@ -12,6 +12,7 @@
     "@popperjs/core": "^2.11.8",
     "devextreme": "24.1.4",
     "devextreme-vue": "24.1.4",
+    "dotenv": "^16.4.5",
     "pinia": "^2.1.7",
     "v-calendar": "^3.1.2",
     "vue": "^3.4.29",
