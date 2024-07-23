@@ -31,7 +31,7 @@
                 </SignedIn>
 
                 <SignedOut>
-                  <SignInButton mode="modal" class=" px-2 text-white rounded" after-sign-in-url="/dashboard" />
+                  <SignInButton mode="modal" class=" px-2 text-white rounded" after-sign-in-url="/" />
                 </SignedOut>
               </div>
 
