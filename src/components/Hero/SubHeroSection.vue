@@ -1,11 +1,11 @@
 <template>
-    <section class="w-[90%] mx-auto lg:h-[30vh] flex flex-col lg:flex-row gap-y-4 py-[10svh] lg:py-0 items-center justify-center lg:gap-x-[4rem]">
+    <section class="w-[90%] mx-auto xl:h-[30vh] mt-[5svh] flex flex-col lg:flex-row gap-y-4 py-[10svh] lg:py-0 items-center justify-center lg:gap-x-[4rem]">
         <div
             class="flex-1 py-4 h-[70%] w-full bg-about-1 rounded-lg flex flex-col items-center justify-center px-3 text-center text-white">
             <h1 class="text-2xl xl:text-4xl 2xl:text-5xl font-semibold  tracking-wide text-yellow-400 drop-shadow-lg">
                 INTEGRITY
             </h1>
-            <p class="tracking-wide drop-shadow-lg font-light md:font-normal text-xs md:text-base lg:text-md">Enhancing community life through education, health, economic
+            <p class="tracking-wide drop-shadow-lg font-light md:font-normal text-xs md:text-sm xl:text-md">Enhancing community life through education, health, economic
                 development, and sustainability initiatives.
             </p>
         </div>
@@ -14,7 +14,7 @@
             <h1 class="text-2xl xl:text-4xl 2xl:text-5xl font-semibold  tracking-wide text-yellow-400 drop-shadow-lg">
                 EXCELLENCE
             </h1>
-            <p class="tracking-wide drop-shadow-lg font-light md:font-normal text-xs md:text-base lg:text-md">Excellence, and collaboration enhance education, health, economic
+            <p class="tracking-wide drop-shadow-lg font-light md:font-normal text-xs md:text-sm xl:text-md">Excellence, and collaboration enhance education, health, economic
                 growth, and sustainability for all.
             </p>
         </div>
@@ -23,7 +23,7 @@
             <h1 class="text-2xl xl:text-4xl 2xl:text-5xl font-semibold  tracking-wide text-yellow-400 drop-shadow-lg">
                 HONESTY
             </h1>
-            <p class="tracking-wide drop-shadow-lg font-light md:font-normal text-xs md:text-base lg:text-md">Enhancing education, health, and sustainability with honesty,
+            <p class="tracking-wide drop-shadow-lg font-light md:font-normal text-xs md:text-sm xl:text-md">Enhancing education, health, and sustainability with honesty,
                 transparency, and community collaboration.
             </p>
         </div>

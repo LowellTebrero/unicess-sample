@@ -1,6 +1,6 @@
 <template>
 
-    <section class="bg-image w-full lg:h-[40vh] z-10 relative overflow-hidden p-4" id="about">
+    <section class="bg-image w-full xl:h-[40vh] z-10 relative overflow-hidden p-4" id="about">
       <h1 class="text-xl lg:text-2xl font-semibold tracking-wide text-white my-5 lg:my-10 text-center">ABOUT UNICESS</h1>
       <div class="w-[90%] m-auto text-white tracking-wide">
         <h1 class="2xl:mt-12 sm:mt-8 mt-4 2xl:text-xl xl:text-xl text-sm font-light text-center">About University Community Extension Services System</h1>

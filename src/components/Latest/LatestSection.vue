@@ -1,6 +1,6 @@
 <template>
-    <h1 class="text-center text-xl lg:text-2xl mt-5 lg:mt-12 font-semibold tracking-wide text-blue-900" id="latest">LATEST NEWS</h1>
-    <section class="lg:h-[50vh] py-[4svh] lg:py-0 flex flex-col lg:flex-row items-center justify-between mx-auto w-[90%] gap-4">
+    <h1 class="text-center text-xl lg:text-2xl mt-5 mb-10  lg:mt-12 font-semibold tracking-wide text-blue-900 " id="latest">LATEST NEWS</h1>
+    <section class="xl:h-[50vh] py-[4svh] my-10 lg:py-0 flex flex-col lg:flex-row items-center justify-between mx-auto w-[90%] gap-4">
         <div class="w-full">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
                 <!-- Carousel wrapper -->
