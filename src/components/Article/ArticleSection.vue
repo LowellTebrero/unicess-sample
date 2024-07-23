@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-2xl font-semibold tracking-wide text-blue-900 mt-[10vh] mb-10 text-center" id="article">ARTICLE SECTION</h1>
+    <h1 class="text-2xl font-semibold tracking-wide text-blue-900 mt-[5svh] lg:mt-[10vh] mb-10 text-center" id="article">ARTICLE SECTION</h1>
 
     <section class="flex items-center justify-center h-[70vh] w-[80%] xl:w-[70%] mx-auto text-blue-900">
         

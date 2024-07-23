@@ -6,7 +6,7 @@
 
             <div class="text-white text-xs ">
                 <h3 class="underline underline-offset-4 text-md font-semibold">Contact us:</h3>
-                <p class="mt-5 text-sm">University Community Extension Services System
+                <p class="mt-5 text-xs lg:text-sm">University Community Extension Services System
                     <br> Paterno Street Tacloban City
                     <br> 6500 <span class="ml-1">+63 968 616 0038</span>
                     <br> <a href="https:/lnu.edu.ph"> info@.edu.ph</a>
@@ -15,15 +15,15 @@
 
             <div class="text-white text-xs ">
                 <h3 class="underline underline-offset-4 text-md font-semibold">Useful Links:</h3>
-                <a href="https://www.lnu.edu.ph/" class="mt-5 text-sm block">Official Website</a>
-                <a href="https://www.enrollment.lnu.edu.ph/index.php" class=" text-sm block"> Online Student Portal</a>
+                <a href="https://www.lnu.edu.ph/" class="mt-5 text-xs lg:text-sm block">Official Website</a>
+                <a href="https://www.enrollment.lnu.edu.ph/index.php" class=" text-xs lg:text-sm block"> Online Student Portal</a>
             </div>
         </div>
 
 
         <div class="flex-1 flex flex-col justify-end items-center ">
         <div class="flex items-center space-x-4"><img class="w-[4rem]" src="/src/assets/img/logo.png" alt=""> <h1 class="text-white font-bold text-lg">UniCESS</h1> </div>
-        <p class="mb-10 mt-5 text-white text-xs text-center">©Copyright University Community Extension Services System. All Rights Reserved 2023 </p>
+        <p class="mb-10 mt-5 text-white text-xs text-center w-[70%] lg:w-auto">©Copyright University Community Extension Services System. All Rights Reserved 2023 </p>
         </div>
 
 
