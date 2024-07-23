@@ -3,8 +3,8 @@
         <nav class=" mx-auto h-[7vh] w-[90%] flex items-center justify-between">
             <h1 class="text-yellow-400 text-xl font-medium tracking-wide">UNICESS</h1>
             
-            <div class="fixed md:relative top-0 right-[-8rem] md:right-0 bg-blue-800 md:bg-transparent h-full" id="sidebar" :class="{ 'w-change': isSidebarOpen }">
-              <ul class="flex flex-col gap-y-4 md:gap-y-0 md:flex-row gap-x-10 text-white p-4">
+            <div class="fixed w-0 lg:w-auto lg:relative top-0 right-[-8rem] md:right-0 bg-blue-800 md:bg-transparent h-full" id="sidebar" :class="{ 'w-change': isSidebarOpen }">
+              <ul class="flex flex-col gap-y-4 md:gap-y-0 md:flex-row gap-x-10 text-white p-4 text-sm ">
                 <a href="#home">Home</a>
                 <a href="#latest">Latest</a>
                 <a href="#about">About</a>
@@ -15,11 +15,31 @@
               </ul>
             </div>
             
-            <div class="block md:hidden z-50">
-              <button @click="toggle" type="button">
-                <img src="/src/assets/img/burger.png" width="30" alt="" />
-              </button>
+            <div class="flex items-center">
+              <div>
+                <SignedIn>
+                  <div class="flex items-center gap-x-2 text-white">
+                    <h1 class="text-lg">Hi,</h1>
+                    <UserButton/>
+                  </div>
+              </SignedIn>
+              <SignedOut>
+                <SignInButton mode="modal" class=" px-2 text-white rounded" />
+              </SignedOut>
+              </div>
+
+              <div class="block lg:hidden z-50 mt-1">
+                <button @click="toggle" type="button">
+                  <img src="/src/assets/img/burger.png" width="30" alt="" />
+                </button>
+              </div>
             </div>
+
+
+           
+
+
+
            
               <!-- <Dropdown class="text-white">
                 <template v-slot:body>
@@ -50,6 +70,7 @@
 
 <script setup>
 
+import { SignInButton, SignedIn, SignedOut, UserButton } from 'vue-clerk'
 import { ref } from 'vue';
 
 const isSidebarOpen = ref(false);
