@@ -3,29 +3,36 @@
         <nav class=" mx-auto h-[7vh] w-[90%] flex items-center justify-between">
             <h1 class="text-yellow-400 text-xl font-medium tracking-wide">UNICESS</h1>
             
-            <div class="fixed w-0 lg:w-auto lg:relative top-0 right-[-8rem] md:right-0 bg-blue-800 md:bg-transparent h-full" id="sidebar" :class="{ 'w-change': isSidebarOpen }">
-              <ul class="flex flex-col gap-y-4 md:gap-y-0 md:flex-row gap-x-10 text-white p-4 text-sm ">
-                <a href="#home">Home</a>
-                <a href="#latest">Latest</a>
-                <a href="#about">About</a>
-                <a href="#article">Article</a>
-                <a href="#program">Progam</a>
-                <a href="#mission">Mission</a>
-                <a href="#contact">Contact</a>
+            <div class="fixed w-0 lg:w-auto lg:relative top-0 right-[-8rem] lg:right-0 bg-blue-800 lg:bg-transparent h-full" id="sidebar" :class="{ 'w-change': isSidebarOpen }">
+              <ul class="flex flex-col gap-y-5 lg:gap-y-0 lg:flex-row lg:gap-x-10 lg:mt-0 mt-[5svh] text-white p-4 text-sm ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#latest">Latest</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#article">Article</a></li>
+                <li><a href="#program">Progam</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="block lg:hidden ">
+                  <SignedOut>
+                  <SignInButton mode="modal" class=" p-2 text-white rounded bg-blue-900" />
+                </SignedOut>
+                </li>
+                
               </ul>
             </div>
             
-            <div class="flex items-center">
+            <div class="flex space-x-2 items-center">
               <div>
                 <SignedIn>
-                  <div class="flex items-center gap-x-2 text-white">
+                  <div class="flex items-center gap-x-2 text-white z-50">
                     <h1 class="text-lg">Hi,</h1>
                     <UserButton/>
                   </div>
-              </SignedIn>
-              <SignedOut>
-                <SignInButton mode="modal" class=" px-2 text-white rounded" />
-              </SignedOut>
+                </SignedIn>
+
+                <SignedOut>
+                  <SignInButton mode="modal" class=" px-2 text-white rounded" after-sign-in-url="/dashboard" />
+                </SignedOut>
               </div>
 
               <div class="block lg:hidden z-50 mt-1">
@@ -33,44 +40,13 @@
                   <img src="/src/assets/img/burger.png" width="30" alt="" />
                 </button>
               </div>
-            </div>
-
-
-           
-
-
-
-           
-              <!-- <Dropdown class="text-white">
-                <template v-slot:body>
-                  <div  class="flex items-center gap-x-2">
-                    <div>
-                      <button @click="toggleDropdown" v-if="!isLoading && userdata !== null">{{ userdata.name }}</button>
-                     
-                      <div v-else-if="isLoading">
-                        <Icon icon="eos-icons:loading" width="1.2rem" height="1.2rem" />
-                      </div>
-                      <button v-else @click="toggleDropdown">Login</button>
-                    </div>                         
-                  </div>
-                </template>
-
-                <template v-slot:dropdown>
-                    <router-link to="/login" class="text-md hover:bg-slate-100" v-if="!userdata">Login</router-link>
-                    <router-link to="/register" class="text-md hover:bg-slate-100" v-if="!userdata">Register</router-link>
-                    <router-link to="/dashboard" class="text-md hover:bg-slate-100" v-if="userdata">Dashboard</router-link>
-                    <li class="text-md hover:bg-slate-100 cursor-pointer" v-if="userdata" @click.prevent="handleLogout">Logout</li>           
-                </template>
-
-              </Dropdown>             -->
-           
+            </div>         
         </nav>
     </header>
 </template>
 
 <script setup>
-
-import { SignInButton, SignedIn, SignedOut, UserButton } from 'vue-clerk'
+import { SignInButton, SignedIn, SignedOut, UserButton, RedirectToUserProfile } from 'vue-clerk'
 import { ref } from 'vue';
 
 const isSidebarOpen = ref(false);
